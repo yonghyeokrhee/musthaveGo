@@ -1,4 +1,4 @@
-//ch6/ex6.9/ex6.9.go
+//ch6/ex6.2/ex6.2.go
 package main
 
 import (
@@ -7,11 +7,11 @@ import (
 )
 
 func main() {
-	a, _ := new(big.Float).SetString("0.1") // ❶
+	a, _ := new(big.Float).SetString("0.1")
 	b, _ := new(big.Float).SetString("0.2")
 	c, _ := new(big.Float).SetString("0.3")
 
-	d := new(big.Float).Add(a, b) // ❷
+	d := new(big.Float).Add(a, b)
 	fmt.Println(a, b, c, d)
-	fmt.Println(c.Cmp(d)) // ❸
+	fmt.Println(c.Cmp(d))
 }
