@@ -8,7 +8,7 @@ func main() {
 
 	nums[2] = 300 // ❷
 
-	for i := 0; i < len(nums); i++ { // ❸
-		fmt.Println(nums[i]) // ➍
+	for i := 0; i < len(nums); i++ {
+		fmt.Println(nums[i])
 	}
 }

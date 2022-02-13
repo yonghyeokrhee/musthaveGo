@@ -17,5 +17,5 @@ func main() {
 		fmt.Println("My age is", age) // age값 사용
 	}
 
-	fmt.Println("age is", age) // error - age 변수는 사라졌습니다. ❷
+	//fmt.Println("age is", age) // error - age 변수는 사라졌습니다. ❷
 }

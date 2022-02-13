@@ -12,18 +12,18 @@ const (
 )
 
 // 각 ColorType 열거값에 따른 문자열을 반환하는 함수
-func colorToString(color ColorType) string { // ❷
+func colorToString(color ColorType) ColorType { // ❷
 	switch color {
 	case Red:
-		return "Red"
+		return Red
 	case Blue:
-		return "Blue"
+		return Blue
 	case Green:
-		return "Green"
+		return Green
 	case Yellow:
-		return "Yellow"
+		return Yellow
 	default:
-		return "Undefined"
+		return 0
 	}
 }
 
