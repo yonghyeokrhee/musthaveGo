@@ -9,4 +9,5 @@ func main() {
 
 	fmt.Printf("len(str) = %d\n", len(str))     // ❸ string 타입 길이
 	fmt.Printf("len(runes) = %d\n", len(runes)) // ➍ []rune 타입 길이
+	fmt.Println(runes)
 }
