@@ -33,8 +33,8 @@ func main() {
 	mainA.withdrawValue(20)    // 포인터 변수 값타입 메서드 호출 - ①
 	fmt.Println(mainA.balance) // 여전히 70이 출력
 
-	var mainB account = mainA.withdrawReturnValue(20)
-	fmt.Println(mainB.balance) // 50이 출력
+	var mainB account = mainA.withdrawReturnValue(20) //값을 반환하는 메써드를 이용해서 mainB로 값을 받아주었다.
+	fmt.Println(mainB.balance)                        // 50이 출력
 
 	mainB.withdrawPointer(30)  // 값 변수 포인터타입 메서드 호출 - ②
 	fmt.Println(mainB.balance) // 20이 출력
