@@ -7,20 +7,19 @@ type account struct {
 	balance int
 }
 
-func withdrawFunc(a *account, amount int) { // 일반 함수 표현
+func withdrawFunc(a *account, amount int) {
 	a.balance -= amount
 }
 
-func (a *account) withdrawMethod(amount int) { // 메서드 표현 ❶
+func (a *account) withdrawMethod(amount int) {
 	a.balance -= amount
 }
 
 func main() {
-	a := &account{100} // balance가 100인 account 포인터 변수 생성
+	a := &account{100}
+	withdrawFunc(a, 30)
 
-	withdrawFunc(a, 30) // 함수 형태 호출
-
-	a.withdrawMethod(30) // 메서드 형태 호출 ❷
+	a.withdrawMethod(30)
 
 	fmt.Printf("%d \n", a.balance)
 }
